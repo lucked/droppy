@@ -131,7 +131,7 @@ function onRequest(req, res) {
     }
   } else {
     res.statusCode = 503;
-    res.end("<!DOCTYPE html><html><head><title>droppy - starting up</title></head><body><h2>Just a second! droppy is starting up ...<h2><script>window.setTimeout(function(){window.location.reload()},2000)</script></body></html>");
+    res.end("<!DOCTYPE html><html><head><title>droppy - starting up</title></head><body><h2>droppy is starting up ...<h2><script>setTimeout(function(){location.reload()},2000)</script></body></html>");
   }
 }
 
